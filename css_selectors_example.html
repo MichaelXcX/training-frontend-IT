@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root {
+            --primary-color: #f1f1f1;
+            --secondary-color: #333;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            justify-content: center;
+            height: 100svh;
+        }
+
+        .dimensions {
+            width: 100px !important;
+            height: 100px;
+            background-color: var(--primary-color);
+            border: 2px solid #333;
+        }
+        
+        .dimensions {
+            width: 300px;
+        }
+
+        .div1 {
+            position: relative;
+            background-color: aqua;
+            /* animation: hoverAnimation 2s infinite; */
+        }
+
+        /* .div1:hover {
+            animation: none;
+        } */
+
+        input:focus{
+            /* background-color: red; */
+            text-align: center;
+            top: -30px;
+        }
+
+        @keyframes hoverAnimation {
+            0% {
+                background-color: red;
+                color: #fff;
+            }
+            25% {
+                background-color: yellow;
+                color: #000;
+            }
+            50% {
+                width: 300px;
+            }
+            75% {
+                font-size: 2rem;
+            }
+            100% {
+                background-color: red;
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="dimensions div1">buton1</div>
+        <div class="dimensions div2">titlu</div>
+        <div class="dimensions div3">buton2</div>
+        <form action="">
+            <input type="text" placeholder="Croi" />
+        </form>
+    </div>
 </body>
 </html>
