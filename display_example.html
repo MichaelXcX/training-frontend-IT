@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Display Examples</title>
+
+</head>
+<body>
+    <div class="container block">
+        <h2>Block</h2>
+        <p>This is a block-level element. It takes up the full width available and starts on a new line.</p>
+    </div>
+
+    <div class="container inline">
+        <h2>Inline</h2>
+        <p>This is an inline-level element. It only takes up as much width as necessary and does not start on a new line.</p>
+    </div>
+
+    <div class="container inline-block">
+        <h2>Inline-block</h2>
+        <p>This is an inline-block element. It behaves like an inline element but allows for setting width, height, padding, and margins.</p>
+    </div>
+
+    <div class="container flex">
+        <h2>Flex</h2>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <div class="container grid">
+        <h2>Grid</h2>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+    <style style="display: block; white-space: pre;">
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+    
+        .container {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+    
+        .block {
+            display: block;
+        }
+    
+        .inline {
+            display: inline;
+        }
+    
+        .inline-block {
+            display: inline-block;
+        }
+    
+        .flex {
+            display: flex;
+        }
+    
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 10px;
+        }
+    
+        .item {
+            padding: 10px;
+            background-color: #ccc;
+            border: 1px solid #999;
+        }
+    </style>
+</body>
+</html>

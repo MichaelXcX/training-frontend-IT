@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Border Examples</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+
+    .box {
+        width: 200px;
+        height: 100px;
+        margin-bottom: 10px;
+        background-color: #fff;
+    }
+
+    .border-solid {
+        border: 2px solid #333;
+    }
+
+    .border-dashed {
+        border: 2px dashed #333;
+    }
+
+    .border-dotted {
+        border: 2px dotted #333;
+    }
+
+    .border-double {
+        border: 4px double #333;
+    }
+
+    .border-rounded {
+        border: 2px solid #333;
+        border-radius: 10px;
+    }
+
+    .border-top-rounded {
+        border: 2px solid #333;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .border-bottom-rounded {
+        border: 2px solid #333;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Solid Border</h2>
+        <div class="box border-solid"></div>
+    </div>
+
+    <div class="container">
+        <h2>Dashed Border</h2>
+        <div class="box border-dashed"></div>
+    </div>
+
+    <div class="container">
+        <h2>Dotted Border</h2>
+        <div class="box border-dotted"></div>
+    </div>
+
+    <div class="container">
+        <h2>Double Border</h2>
+        <div class="box border-double"></div>
+    </div>
+
+    <div class="container">
+        <h2>Rounded Border</h2>
+        <div class="box border-rounded"></div>
+    </div>
+
+    <div class="container">
+        <h2>Rounded Border</h2>
+        <div class="box border-top-rounded"></div>
+    </div>
+
+    <div class="container">
+        <h2>Rounded Border</h2>
+        <div class="box border-bottom-rounded"></div>
+    </div>
+</body>
+</html>

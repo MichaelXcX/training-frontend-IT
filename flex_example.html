@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Flex Example</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+    </div>
+    <style style="display: block; white-space: pre; font: 20px monospace">
+        .flex-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            background-color: DodgerBlue;
+            z-index: 1;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+        }
+        .flex-container:nth-child(4) {
+            align-items: center;
+            justify-content: center;
+        }
+        .flex-container:nth-child(5) {
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .flex-container:nth-child(6) {
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .flex-container:nth-child(7) {
+            align-items: center;
+            justify-content: space-around;
+        }
+        .flex-container:nth-child(8) {
+            align-items: center;
+            justify-content: space-between;
+        }
+        .flex-item {
+            position: relative;
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }   
+    </style>
+</body>
+</html>
